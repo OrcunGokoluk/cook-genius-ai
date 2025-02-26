@@ -1,0 +1,50 @@
+.main-header{
+    height: 20vh;
+    background-color: #D4D4D2;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-bottom: #9e9e95 solid 1px;
+    overflow: hidden;
+}
+.main-header img{
+    height: 28vh;
+}
+.main-header h1{
+    font-family: "Host Grotesk", sans-serif;
+    font-weight: 200;
+    font-size: 2.5rem;
+    color: rgb(21, 21, 21);
+}
+
+.ingredient-form{
+    display: flex;
+    gap:1rem
+}
+
+.ingredient-form input, button{
+    font-size: 1.5rem;
+    border-radius: 0.5rem;
+    padding: 1rem;
+    margin-top: 3rem;
+}
+.ingredient-form button{
+    border: none;
+    background-color: #D4D4D2;
+}
+.ingredient-form button:hover{
+    border: none;
+    background-color: #c2c2bf;
+}
+.ingredient-form button:active{
+    border: none;
+    background-color: #D4D4D2;
+}
+.ingredient-form input{
+    border: #9e9e95 solid 1px;
+}
+
+main{
+    display: flex;
+    justify-content: center;
+}

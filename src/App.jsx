@@ -1,10 +1,16 @@
-import { useState } from 'react'
+
+import Header from "./components/Header"
 import './App.css'
+import FormInput from "./components/FormInput"
 
 function App() {
 
   return (
     <>
+      <Header/>
+      <main>
+        <FormInput/>
+      </main>
 
     </>
   )
