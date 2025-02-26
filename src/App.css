@@ -1,10 +1,10 @@
 .main-header{
     height: 20vh;
-    background-color: #D4D4D2;
+    background-color: #E6E6E6;
     display: flex;
     justify-content: center;
     align-items: center;
-    border-bottom: #9e9e95 solid 1px;
+    border-bottom: #aaaaaa solid 1px;
     overflow: hidden;
 }
 .main-header img{
@@ -12,13 +12,17 @@
 }
 .main-header h1{
     font-family: "Host Grotesk", sans-serif;
+    white-space: nowrap ;
     font-weight: 200;
-    font-size: 2.5rem;
-    color: rgb(21, 21, 21);
+    font-size: 200%;
+    color: #787878;
 }
 
 .ingredient-form{
     display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
     gap:1rem
 }
 
@@ -27,24 +31,83 @@
     border-radius: 0.5rem;
     padding: 1rem;
     margin-top: 3rem;
+    color: #727272;
+}
+.ingredient-form input{
+    width: 80%;
 }
 .ingredient-form button{
+    white-space: nowrap;
     border: none;
-    background-color: #D4D4D2;
+    background-color: #E6E6E6;
 }
 .ingredient-form button:hover{
     border: none;
-    background-color: #c2c2bf;
+    background-color: #d7d7d3;
 }
 .ingredient-form button:active{
     border: none;
-    background-color: #D4D4D2;
+    background-color: #E6E6E6;
 }
 .ingredient-form input{
     border: #9e9e95 solid 1px;
+}
+.ingredient-list{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 1.9rem;
+    list-style: none;
+    margin-top:2rem ;
+    color: #797971;
+}
+
+.ingredient-container{
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
 }
 
 main{
     display: flex;
     justify-content: center;
+}
+.get-recipe-button{
+    white-space: nowrap;
+    border: none;
+    background-color: #D4D4D2;
+    width: 70%;
+    color: #E9E9E9;
+    background-color: #787878;
+    font-size: 2rem;
+}
+
+.get-recipe-button:hover{
+    border: none;
+    color: #E9E9E9;
+    background-color: #636363;
+}
+.get-recipe-button:active{
+    border: none;
+    color: #E9E9E9;
+    background-color: #787878;
+}
+.ingredient-list{
+    display: flex;
+    gap:0.3rem;
+    width: 70%;
+}
+
+.ingredient-list li{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0.5rem;
+    border-radius: 0.5rem;
+    background-color: #E9E9E9;
+    color:#787878;
+    width: 100%;
 }
