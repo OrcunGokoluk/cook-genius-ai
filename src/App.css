@@ -116,7 +116,13 @@ main{
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    font-size: 2rem;
+    font-size: 1.5rem;
     color:#727272;
     margin: 4rem 10rem
+}
+
+.loading-text{
+    margin-top:2rem;
+    font-size: 5rem;
+    color:#727272;
 }

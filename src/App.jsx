@@ -18,10 +18,20 @@ function App() {
     }
 
     const [recipe, setRecipe]= useState("")
+    const [loading, setLoading]=useState(true)
+    const [cookingText, setCookingText] = useState("")
 
     async function getRecipe(data){
-    const generate_recipe= await getRecipeFromMistral(data)
 
+      setRecipe("")
+      setLoading(true)
+
+      if(loading){
+        setCookingText("Cooking...")
+      }
+      const generate_recipe= await getRecipeFromMistral(data)
+
+      generate_recipe && setLoading(false)
 
       setRecipe(generate_recipe)
     }
@@ -44,7 +54,8 @@ function App() {
           
           <button onClick={()=>getRecipe(ingredients)} className="get-recipe-button">Get Recipe</button>
 
-          {recipe ? <Recipe recipe={recipe}/>  : ""}
+          {loading ? <p className="loading-text">{cookingText}</p> :
+           recipe ? <Recipe recipe={recipe}/>  : ""}
 
       </div>
 
