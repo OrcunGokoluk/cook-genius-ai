@@ -3,7 +3,7 @@
 Cook Genius AI is a web application that generates cooking recipes based on user-provided ingredients. Utilizing AI-powered inference from Hugging Face's Mixtral model, the application suggests recipes with relevant ingredients, formatted in markdown for easy readability.
 
 ### Click link below to test my project
-<https://67c06d1f90577129a3388446--cosmic-zabaione-fda4e3.netlify.app/>
+<https://67c07cfb1c1f010dc52ce127--cosmic-zabaione-fda4e3.netlify.app/>
 
 ## Usage
 
