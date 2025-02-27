@@ -52,7 +52,7 @@ function App() {
                   }
           </ul>
           
-          <button onClick={()=>getRecipe(ingredients)} className="get-recipe-button">Get Recipe</button>
+          {ingredients.length>0?<button onClick={()=>getRecipe(ingredients)} className="get-recipe-button">Get Recipe</button>:""}
 
           {loading ? <p className="loading-text">{cookingText}</p> :
            recipe ? <Recipe recipe={recipe}/>  : ""}
