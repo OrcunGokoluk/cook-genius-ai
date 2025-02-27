@@ -123,10 +123,21 @@ main{
 }
 .description{
     margin-top: 5.5rem;
+    background-color:#E6E6E6 ;
+    padding: 3rem;
+    border-radius: 1rem;
 }
 
 .loading-text{
     margin-top:2rem;
+    margin-bottom:2rem;
     font-size: 5rem;
     color:#727272;
+}
+#get-recipe-nav{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    list-style: none;
+    text-decoration: none;
 }
