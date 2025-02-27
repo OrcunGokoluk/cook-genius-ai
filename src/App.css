@@ -111,3 +111,12 @@ main{
     color:#787878;
     width: 100%;
 }
+.recipe-text{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+    color:#727272;
+    margin: 4rem 10rem
+}

@@ -3,6 +3,8 @@ import Header from "./components/Header"
 import './App.css'
 import {useState} from "react"
 import { v4 as uuidv4 } from 'uuid';
+import getRecipeFromMistral from "./ai_interface/ai"
+import Recipe from "./components/Recipe";
 
 function App() {
 
@@ -13,6 +15,15 @@ function App() {
       if(ingredientData){
         setIngredients(prev=>[...prev,ingredientData])
       }
+    }
+
+    const [recipe, setRecipe]= useState("")
+
+    async function getRecipe(data){
+    const generate_recipe= await getRecipeFromMistral(data)
+
+
+      setRecipe(generate_recipe)
     }
 
   return (
@@ -31,7 +42,9 @@ function App() {
                   }
           </ul>
           
-          <button className="get-recipe-button">Get Recipe</button>
+          <button onClick={()=>getRecipe(ingredients)} className="get-recipe-button">Get Recipe</button>
+
+          {recipe ? <Recipe recipe={recipe}/>  : ""}
 
       </div>
 
