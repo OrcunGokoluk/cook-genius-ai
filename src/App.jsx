@@ -40,7 +40,11 @@ function App() {
   return (
     <>
       <Header/>
-      {ingredients.length<1 ? <Description/> : ""}
+
+      <div className="description-container">
+          {ingredients.length<1 ? <Description/> : ""}
+      </div>
+      
       <div className="ingredient-container">
 
         <form className="ingredient-form" action={addIngredients}>
