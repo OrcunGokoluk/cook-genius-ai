@@ -23,14 +23,14 @@
     justify-content: center;
     align-items: center;
     width: 100%;
-    gap:1rem
+    gap:1rem;
+    margin-top: 2rem;
 }
 
 .ingredient-form input, button{
     font-size: 1.5rem;
     border-radius: 0.5rem;
     padding: 1rem;
-    margin-top: 3rem;
     color: #727272;
 }
 .ingredient-form input{
@@ -83,6 +83,7 @@ main{
     color: #E9E9E9;
     background-color: #787878;
     font-size: 2rem;
+    margin-top: 1.5rem;
 }
 
 .get-recipe-button:hover{
@@ -111,14 +112,17 @@ main{
     color:#787878;
     width: 100%;
 }
-.recipe-text{
+.recipe-text, .description{
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     font-size: 1.5rem;
     color:#727272;
-    margin: 4rem 10rem
+    margin: 3rem 10rem
+}
+.description{
+    margin-top: 5.5rem;
 }
 
 .loading-text{

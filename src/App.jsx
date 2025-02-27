@@ -5,6 +5,7 @@ import {useState} from "react"
 import { v4 as uuidv4 } from 'uuid';
 import getRecipeFromMistral from "./ai_interface/ai"
 import Recipe from "./components/Recipe";
+import Description from "./components/Description";
 
 function App() {
 
@@ -39,6 +40,7 @@ function App() {
   return (
     <>
       <Header/>
+      {ingredients.length<1 ? <Description/> : ""}
       <div className="ingredient-container">
 
         <form className="ingredient-form" action={addIngredients}>
